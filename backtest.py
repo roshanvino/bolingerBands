@@ -9,7 +9,7 @@ def backtest_strategy(data):
 
 
 if __name__ == "__main__":
-    data = pd.read_csv('../data/stock_data_with_signals.csv', index_col='Date', parse_dates=True)
+    data = pd.read_csv('data/stock_data_with_signals.csv', index_col='Date', parse_dates=True)
 
     data = backtest_strategy(data)
-    data.to_csv('../data/backtest_results.csv')
+    data.to_csv('data/backtest_results.csv')

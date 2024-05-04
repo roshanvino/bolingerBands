@@ -14,10 +14,10 @@ def visualise_results(data):
     plt.xlabel('Date')
     plt.ylabel('Close Price')
     plt.grid(True)
-    plt.savefig('../results/backtest_results.png')
+    plt.savefig('results/backtest_results.png')
 
 
 if __name__ == "__main__":
-    data = pd.read_csv('../data/backtest_results.csv', index_col='Date', parse_dates=True)
+    data = pd.read_csv('data/backtest_results.csv', index_col='Date', parse_dates=True)
 
     visualise_results(data)
